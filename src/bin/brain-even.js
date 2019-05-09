@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import even from '../games/even';
-import index from '../index';
+import engine from '../engine';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
-index(description, even);
+engine(description, even);

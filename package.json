@@ -1,8 +1,8 @@
 {
   "name": "ch-brain-games",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "hexlet project lvl 1",
-  "keywords": ['brain-games', 'hexlet project'],
+  "keywords": ["brain-games"],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
