@@ -14,3 +14,8 @@
 ### GCD
 `brain-gcd` to play    
 [![asciicast](https://asciinema.org/a/wjs6xcmFygBVXYqnEZdNEikI0.svg)](https://asciinema.org/a/wjs6xcmFygBVXYqnEZdNEikI0)
+
+### Progression  
+`brain-progression` to play  
+  
+[![asciicast](https://asciinema.org/a/iaOj9qOS5SUO83zVFb80Wj8k1.svg)](https://asciinema.org/a/iaOj9qOS5SUO83zVFb80Wj8k1)  
