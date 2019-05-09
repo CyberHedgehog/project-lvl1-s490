@@ -9,4 +9,8 @@
 
 ### Calc  
 `brain-calc` to play  
-[![asciicast](https://asciinema.org/a/DQEoWnQmNVyhgZWajWfaVc8Mn.svg)](https://asciinema.org/a/DQEoWnQmNVyhgZWajWfaVc8Mn)  
+[![asciicast](https://asciinema.org/a/DQEoWnQmNVyhgZWajWfaVc8Mn.svg)](https://asciinema.org/a/DQEoWnQmNVyhgZWajWfaVc8Mn)    
+
+### GCD
+`brain-gcd` to play    
+[![asciicast](https://asciinema.org/a/wjs6xcmFygBVXYqnEZdNEikI0.svg)](https://asciinema.org/a/wjs6xcmFygBVXYqnEZdNEikI0)
