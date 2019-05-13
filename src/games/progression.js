@@ -1,4 +1,5 @@
 import { cons } from 'hexlet-pairs';
+import engine from '../engine';
 
 const progressionGenerator = (start, size, d) => {
   const iter = (acc) => {
@@ -11,11 +12,16 @@ const progressionGenerator = (start, size, d) => {
   return iter([start]);
 };
 
-export default () => {
+const game = () => {
   const start = Math.floor(Math.random() * (11 - 1) + 1);
   const dif = Math.floor(Math.random() * (11 - 1) + 1);
   const progression = progressionGenerator(start, 10, dif);
   const hiddenElement = progression[Math.floor(Math.random() * (10 - 1) + 1)];
   const question = progression.map(v => (v === hiddenElement ? '..' : v)).join(' ');
   return cons(question, hiddenElement); // correctAnswer is hiddenElement
+};
+
+export default () => {
+  const description = 'What number is missing in the progression?';
+  engine(description, game);
 };
