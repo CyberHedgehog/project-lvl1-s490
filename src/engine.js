@@ -5,9 +5,11 @@ export default (description, game) => {
   console.log(`Welcome to the Brain Games!\n${description}\n`);
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!\n`);
-  const play = (attempts = 1) => {
-    if (attempts > 3) {
-      return `Congratulations, ${playerName}!`;
+  const play = (attempts) => {
+    const maxAttempts = 3;
+    if (attempts > maxAttempts) {
+      console.log(`Congratulations, ${playerName}!`);
+      return null;
     }
     const gameData = game();
     const question = car(gameData);
@@ -17,7 +19,8 @@ export default (description, game) => {
       console.log('Correct!');
       return play(attempts + 1);
     }
-    return `'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${playerName}!`;
+    console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${playerName}!`);
+    return null;
   };
-  console.log(play());
+  play(1);
 };

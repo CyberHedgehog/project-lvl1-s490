@@ -1,8 +1,11 @@
 import { cons } from 'hexlet-pairs';
 import engine from '../engine';
+import { getRandomNum } from '../utils';
 
 const gcdEval = (n1, n2) => {
-  const remainder = n1 % n2;
+  const min = Math.min(n1, n2);
+  const max = Math.max(n1, n2);
+  const remainder = max % min;
   if (remainder === 0) {
     return n2;
   }
@@ -10,14 +13,15 @@ const gcdEval = (n1, n2) => {
 };
 
 const game = () => {
-  const firstNum = Math.floor(Math.random() * (101 - 1)) + 1;
-  const secondNum = Math.floor(Math.random() * (101 - 1)) + 1;
+  const firstNum = getRandomNum(1, 100);
+  const secondNum = getRandomNum(1, 100);
   const question = `${firstNum} ${secondNum}`;
-  const answer = firstNum > secondNum ? gcdEval(firstNum, secondNum) : gcdEval(secondNum, firstNum);
+  const answer = gcdEval(firstNum, secondNum);
   return cons(question, answer);
 };
 
+const description = 'Find the greatest common divisor of given numbers.';
+
 export default () => {
-  const description = 'Find the greatest common divisor of given numbers.';
   engine(description, game);
 };
