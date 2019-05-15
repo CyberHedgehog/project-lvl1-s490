@@ -16,8 +16,8 @@ const game = () => {
   const firstNum = getRandomNum(1, 100);
   const secondNum = getRandomNum(1, 100);
   const question = `${firstNum} ${textOps[operationIndex]} ${secondNum}`;
-  const rightAnswer = ops[operationIndex](firstNum, secondNum);
-  return cons(question, rightAnswer);
+  const answer = ops[operationIndex](firstNum, secondNum).toString();
+  return cons(question, answer);
 };
 
 export default () => {

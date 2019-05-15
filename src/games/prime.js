@@ -3,22 +3,23 @@ import engine from '../engine';
 import { getRandomNum } from '../utils';
 
 const isPrime = (num) => {
-  const iter = (n, acc) => {
-    if (acc === 1) {
+  const iter = (n, count) => {
+    if (count === n) {
       return true;
     }
-    if (n % acc === 0) {
+    if (n % count === 0) {
       return false;
     }
-    return iter(n, acc - 1);
+    return iter(n, count + 1);
   };
-  return iter(num, num - 1);
+  const startCount = 2;
+  return iter(num, startCount);
 };
 
 const game = () => {
   const question = getRandomNum(1, 50) * 2 + 1; // only odd numbers
-  const correctAnswer = isPrime(question) ? 'yes' : 'no';
-  return cons(question, correctAnswer);
+  const answer = isPrime(question) ? 'yes' : 'no';
+  return cons(question, answer);
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';

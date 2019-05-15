@@ -3,11 +3,4 @@ const getRandomNum = (min, max) => {
   return Math.floor(Math.random() * (newMax - min)) + min;
 };
 
-const isEven = (num) => {
-  if (num % 2 === 0) {
-    return true;
-  }
-  return false;
-};
-
-export { getRandomNum, isEven };
+export default getRandomNum;
