@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
 import engine from '../engine';
-import { getRandomNum } from '../utils';
+import getRandomNum from '../utils';
 
 const gcdEval = (n1, n2) => {
   const min = Math.min(n1, n2);

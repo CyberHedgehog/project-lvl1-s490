@@ -9,7 +9,7 @@ export default (description, game) => {
   const play = (attempts) => {
     if (attempts > maxAttempts) {
       console.log(`Congratulations, ${playerName}!`);
-      return null;
+      return;
     }
     const gameData = game();
     const question = car(gameData);
@@ -17,11 +17,11 @@ export default (description, game) => {
     const playerAnswer = readlineSync.question(`Question: ${question}\nYour answer: `);
     if (playerAnswer === correctAnswer) {
       console.log('Correct!');
-      return play(attempts + 1);
+      play(attempts + 1);
+      return;
     }
     console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     console.log(`Let's try again, ${playerName}!`);
-    return null;
   };
   play(1);
 };

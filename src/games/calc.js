@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
 import engine from '../engine';
-import { getRandomNum } from '../utils';
+import getRandomNum from '../utils';
 
 const ops = [
   (x, y) => x + y,
