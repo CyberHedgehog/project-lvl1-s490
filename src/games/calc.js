@@ -12,7 +12,8 @@ const description = 'What is the result of the expression?';
 
 const game = () => {
   // const operationIndex = Math.floor(Math.random() * ops.length);
-  const operationIndex = getRandomNum(0, ops.length);
+  const maxIndex = ops.length - 1;
+  const operationIndex = getRandomNum(0, maxIndex);
   const firstNum = getRandomNum(1, 100);
   const secondNum = getRandomNum(1, 100);
   const question = `${firstNum} ${textOps[operationIndex]} ${secondNum}`;

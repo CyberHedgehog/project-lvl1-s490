@@ -3,17 +3,20 @@ import engine from '../engine';
 import getRandomNum from '../utils';
 
 const isPrime = (num) => {
-  const iter = (n, count) => {
-    if (count === n) {
+  if (num < 2) {
+    return false;
+  }
+  const iter = (count) => {
+    if (count === num) {
       return true;
     }
-    if (n % count === 0) {
+    if (num % count === 0) {
       return false;
     }
-    return iter(n, count + 1);
+    return iter(count + 1);
   };
   const startCount = 2;
-  return iter(num, startCount);
+  return iter(startCount);
 };
 
 const game = () => {

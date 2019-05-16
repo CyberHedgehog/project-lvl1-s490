@@ -2,12 +2,7 @@ import { cons } from 'hexlet-pairs';
 import engine from '../engine';
 import getRandomNum from '../utils';
 
-const isEven = (num) => {
-  if (num % 2 === 0) {
-    return true;
-  }
-  return false;
-};
+const isEven = num => num % 2 === 0;
 
 const game = () => {
   const question = getRandomNum(1, 1000);
