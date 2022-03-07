@@ -22,7 +22,7 @@
   
 [![asciicast](https://asciinema.org/a/iaOj9qOS5SUO83zVFb80Wj8k1.svg)](https://asciinema.org/a/iaOj9qOS5SUO83zVFb80Wj8k1)  
 
-### Primes  
+### Prime  
 `brain-prime` to play  
   
 [![asciicast](https://asciinema.org/a/azkNXxjLcRd4jcF1alWquShUy.svg)](https://asciinema.org/a/azkNXxjLcRd4jcF1alWquShUy)  
