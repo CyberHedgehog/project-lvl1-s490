@@ -1,5 +1,5 @@
 # Hexlet project lvl-1
-## Brain-games
+## Brain-game
 [![Maintainability](https://api.codeclimate.com/v1/badges/7d9459f90f288d220780/maintainability)](https://codeclimate.com/github/CyberHedgehog/project-lvl1-s490/maintainability)
 [![Build Status](https://travis-ci.org/CyberHedgehog/project-lvl1-s490.svg?branch=master)](https://travis-ci.org/CyberHedgehog/project-lvl1-s490) 
 ### Even  
